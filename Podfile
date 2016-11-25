@@ -8,8 +8,7 @@ target 'MGSwinjectDemo' do
   # Pods for MGSwinjectDemo
 
   pod 'Swinject', '2.0.0-beta.2'
-
-  # Uncomment if you use SwinjectStoryboard
   pod 'SwinjectStoryboard', '1.0.0-beta.2'
+  pod 'MagicalRecord', '~> 2.3'
 
 end

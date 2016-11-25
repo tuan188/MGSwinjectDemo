@@ -13,6 +13,10 @@
 		BC84BE541DE7EAF500265931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC84BE521DE7EAF500265931 /* Main.storyboard */; };
 		BC84BE561DE7EAF500265931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC84BE551DE7EAF500265931 /* Assets.xcassets */; };
 		BC84BE591DE7EAF500265931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC84BE571DE7EAF500265931 /* LaunchScreen.storyboard */; };
+		BC84BE651DE7F08600265931 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE631DE7F08600265931 /* Model.xcdatamodeld */; };
+		BC84BE671DE7F0B700265931 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE661DE7F0B700265931 /* Product.swift */; };
+		BC84BE691DE7F0E300265931 /* EntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE681DE7F0E300265931 /* EntityMapper.swift */; };
+		BC84BE6F1DE7F1EB00265931 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE6E1DE7F1EB00265931 /* ProductRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		BC84BE551DE7EAF500265931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC84BE581DE7EAF500265931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC84BE5A1DE7EAF500265931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC84BE641DE7F08600265931 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BC84BE661DE7F0B700265931 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BC84BE681DE7F0E300265931 /* EntityMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMapper.swift; sourceTree = "<group>"; };
+		BC84BE6E1DE7F1EB00265931 /* ProductRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,9 @@
 		BC84BE4D1DE7EAF500265931 /* MGSwinjectDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC84BE621DE7EFD700265931 /* Repositories */,
+				BC84BE611DE7EFA800265931 /* Models */,
+				BC84BE601DE7EFA000265931 /* Services */,
 				BC84BE4E1DE7EAF500265931 /* AppDelegate.swift */,
 				BC84BE501DE7EAF500265931 /* ViewController.swift */,
 				BC84BE521DE7EAF500265931 /* Main.storyboard */,
@@ -86,6 +97,31 @@
 				BC84BE5A1DE7EAF500265931 /* Info.plist */,
 			);
 			path = MGSwinjectDemo;
+			sourceTree = "<group>";
+		};
+		BC84BE601DE7EFA000265931 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		BC84BE611DE7EFA800265931 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC84BE631DE7F08600265931 /* Model.xcdatamodeld */,
+				BC84BE661DE7F0B700265931 /* Product.swift */,
+				BC84BE681DE7F0E300265931 /* EntityMapper.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BC84BE621DE7EFD700265931 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BC84BE6E1DE7F1EB00265931 /* ProductRepository.swift */,
+			);
+			name = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC84BE511DE7EAF500265931 /* ViewController.swift in Sources */,
+				BC84BE671DE7F0B700265931 /* Product.swift in Sources */,
 				BC84BE4F1DE7EAF500265931 /* AppDelegate.swift in Sources */,
+				BC84BE651DE7F08600265931 /* Model.xcdatamodeld in Sources */,
+				BC84BE691DE7F0E300265931 /* EntityMapper.swift in Sources */,
+				BC84BE6F1DE7F1EB00265931 /* ProductRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +419,22 @@
 				BC84BE5F1DE7EAF500265931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC84BE631DE7F08600265931 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC84BE641DE7F08600265931 /* Model.xcdatamodel */,
+			);
+			currentVersion = BC84BE641DE7F08600265931 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BC84BE431DE7EAF500265931 /* Project object */;
 }

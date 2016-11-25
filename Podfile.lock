@@ -1,16 +1,21 @@
 PODS:
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - Swinject (2.0.0-beta.2)
   - SwinjectStoryboard (1.0.0-beta.2):
     - Swinject (= 2.0.0-beta.2)
 
 DEPENDENCIES:
+  - MagicalRecord (~> 2.3)
   - Swinject (= 2.0.0-beta.2)
   - SwinjectStoryboard (= 1.0.0-beta.2)
 
 SPEC CHECKSUMS:
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
   SwinjectStoryboard: b52b45821a50386ef604c3cd098f8029a50a268d
 
-PODFILE CHECKSUM: d57e4d711d749c3fa247bf172b52a155b6f846b5
+PODFILE CHECKSUM: 3e33e4869fa96ad11b12645ed9b85daeb501ca8c
 
 COCOAPODS: 1.1.1
