@@ -17,6 +17,8 @@
 		BC84BE671DE7F0B700265931 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE661DE7F0B700265931 /* Product.swift */; };
 		BC84BE691DE7F0E300265931 /* EntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE681DE7F0E300265931 /* EntityMapper.swift */; };
 		BC84BE6F1DE7F1EB00265931 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE6E1DE7F1EB00265931 /* ProductRepository.swift */; };
+		BC84BE711DE7F55C00265931 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE701DE7F55C00265931 /* ProductServiceProtocol.swift */; };
+		BC84BE751DE7F57F00265931 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE741DE7F57F00265931 /* ProductService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BC84BE661DE7F0B700265931 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		BC84BE681DE7F0E300265931 /* EntityMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMapper.swift; sourceTree = "<group>"; };
 		BC84BE6E1DE7F1EB00265931 /* ProductRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		BC84BE701DE7F55C00265931 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductServiceProtocol.swift; sourceTree = "<group>"; };
+		BC84BE741DE7F57F00265931 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 		BC84BE601DE7EFA000265931 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BC84BE701DE7F55C00265931 /* ProductServiceProtocol.swift */,
+				BC84BE741DE7F57F00265931 /* ProductService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -249,8 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC84BE511DE7EAF500265931 /* ViewController.swift in Sources */,
+				BC84BE751DE7F57F00265931 /* ProductService.swift in Sources */,
 				BC84BE671DE7F0B700265931 /* Product.swift in Sources */,
 				BC84BE4F1DE7EAF500265931 /* AppDelegate.swift in Sources */,
+				BC84BE711DE7F55C00265931 /* ProductServiceProtocol.swift in Sources */,
 				BC84BE651DE7F08600265931 /* Model.xcdatamodeld in Sources */,
 				BC84BE691DE7F0E300265931 /* EntityMapper.swift in Sources */,
 				BC84BE6F1DE7F1EB00265931 /* ProductRepository.swift in Sources */,
