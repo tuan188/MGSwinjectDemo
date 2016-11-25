@@ -8,19 +8,30 @@
 
 import UIKit
 
-class ProductService: NSObject {
+class ProductService: ProductServiceProtocol {
     weak var delegate: ProductServiceDelegate?
     
+    let productRepository = ProductRepository()
+    
     func add(product: Product) {
-        
+        productRepository.add(product: product, completion: { [weak self] success in
+            self?.delegate?.addProductCompleted(product: product, success: success)
+        })
     }
+    
     func update(product: Product) {
-        
+        productRepository.update(product: product, completion: { [weak self] success in
+            self?.delegate?.addProductCompleted(product: product, success: success)
+        })
     }
+    
     func delete(withID id: String) {
-        
+        productRepository.delete(withID: id, completion: { [weak self] success in
+            self?.delegate?.deleteProductCompleted(success: success)
+        })
     }
+    
     func getAll() -> [Product] {
-        return []
+        return productRepository.getAll()
     }
 }

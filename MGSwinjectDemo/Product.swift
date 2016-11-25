@@ -12,4 +12,14 @@ class Product {
     var id = ""
     var name = ""
     var price: Double = 0.0
+    
+    init() {
+        
+    }
+    
+    init(id: String, name: String, price: Double) {
+        self.id = id
+        self.name = name
+        self.price = price
+    }
 }

@@ -9,21 +9,15 @@
 import UIKit
 
 protocol ProductServiceDelegate: class {
-    func addProductSuccess(product: Product)
-    func addProductFailed(product: Product)
-    func updateProductSuccess(product: Product)
-    func updateProductFailed(product: Product)
-    func deleteProductSuccess(product: Product)
-    func deleteProductFailed(product: Product)
+    func addProductCompleted(product: Product, success: Bool)
+    func updateProductCompleted(product: Product, success: Bool)
+    func deleteProductCompleted(success: Bool)
 }
 
 extension ProductServiceDelegate {
-    func addProductSuccess(product: Product) {}
-    func addProductFailed(product: Product) {}
-    func updateProductSuccess(product: Product) {}
-    func updateProductFailed(product: Product) {}
-    func deleteProductSuccess(product: Product) {}
-    func deleteProductFailed(product: Product) {}
+    func addProductCompleted(product: Product, success: Bool) {}
+    func updateProductCompleted(product: Product, success: Bool) {}
+    func deleteProductCompleted(product: Product, success: Bool) {}
 }
 
 protocol ProductServiceProtocol {
