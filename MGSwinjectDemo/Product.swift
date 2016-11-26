@@ -14,7 +14,6 @@ class Product {
     var price: Double = 0.0
     
     init() {
-        
     }
     
     init(id: String, name: String, price: Double) {
