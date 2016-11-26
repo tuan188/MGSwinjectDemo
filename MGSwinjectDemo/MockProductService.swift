@@ -21,14 +21,17 @@ class MockProductService: ProductServiceProtocol {
     
     func add(product: Product) {
         MockProductService.productDictionary[product.id] = product
+        delegate?.addProductCompleted(product: product, success: true)
     }
     
     func update(product: Product) {
         MockProductService.productDictionary[product.id] = product
+        delegate?.updateProductCompleted(product: product, success: true)
     }
     
     func delete(withID id: String) {
         MockProductService.productDictionary.removeValue(forKey: id)
+        delegate?.deleteProductCompleted(productID: id, success: true)
     }
     
     func getAll() -> [Product] {

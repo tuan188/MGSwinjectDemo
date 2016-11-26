@@ -10,13 +10,14 @@ import UIKit
 
 class ProductListViewController: UITableViewController {
     
-    var productService: ProductServiceProtocol = MockProductService()
+    var productService: ProductServiceProtocol = ProductService()
     var products = [Product]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        productService.delegate = self
         
         getListProduct()
     }
@@ -65,8 +66,6 @@ class ProductListViewController: UITableViewController {
         if editingStyle == .delete {
             let product = products[indexPath.row]
             productService.delete(withID: product.id)
-            products.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
 
@@ -94,6 +93,24 @@ class ProductListViewController: UITableViewController {
     }
 }
 
+extension ProductListViewController: ProductServiceDelegate {
+    func addProductCompleted(product: Product, success: Bool) {
+        getListProduct()
+    }
+    
+    func updateProductCompleted(product: Product, success: Bool) {
+        getListProduct()
+    }
+    
+    func deleteProductCompleted(productID: String, success: Bool) {
+        if let index = products.index(where: { $0.id == productID }) {
+            let indexPath = IndexPath(row: index, section: 0)
+            products.remove(at: index)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+}
+
 extension ProductListViewController: ProductViewControllerDelegate {
     func didSaveProduct(product: Product) {
         if product.id.isEmpty {
@@ -103,6 +120,5 @@ extension ProductListViewController: ProductViewControllerDelegate {
         else {
             productService.update(product: product)
         }
-        getListProduct()
     }
 }

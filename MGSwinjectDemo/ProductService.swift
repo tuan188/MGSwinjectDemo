@@ -27,7 +27,7 @@ class ProductService: ProductServiceProtocol {
     
     func delete(withID id: String) {
         productRepository.delete(withID: id, completion: { [weak self] success in
-            self?.delegate?.deleteProductCompleted(success: success)
+            self?.delegate?.deleteProductCompleted(productID: id, success: success)
         })
     }
     

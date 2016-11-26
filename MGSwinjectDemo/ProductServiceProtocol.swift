@@ -11,13 +11,13 @@ import UIKit
 protocol ProductServiceDelegate: class {
     func addProductCompleted(product: Product, success: Bool)
     func updateProductCompleted(product: Product, success: Bool)
-    func deleteProductCompleted(success: Bool)
+    func deleteProductCompleted(productID: String, success: Bool)
 }
 
 extension ProductServiceDelegate {
     func addProductCompleted(product: Product, success: Bool) {}
     func updateProductCompleted(product: Product, success: Bool) {}
-    func deleteProductCompleted(product: Product, success: Bool) {}
+    func deleteProductCompleted(productID: String, success: Bool) {}
 }
 
 protocol ProductServiceProtocol {

@@ -25,7 +25,7 @@ class ProductRepository: NSObject {
     
     func update(product: Product, completion: @escaping (_ success: Bool) -> Void) {
         MagicalRecord.save({ (context) in
-            let predicate = NSPredicate(format: "id = \(product.id)")
+            let predicate = NSPredicate(format: "id = '\(product.id)'")
             if let entity = ProductEntity.mr_findFirst(with: predicate, in: context) {
                 EntityMapper.map(from: product, to: entity)
             }
@@ -39,9 +39,8 @@ class ProductRepository: NSObject {
     
     func delete(withID id: String, completion: @escaping (_ success: Bool) -> Void) {
         MagicalRecord.save({ (context) in
-            let predicate = NSPredicate(format: "id = \(id)")
-            let success = ProductEntity.mr_deleteAll(matching: predicate)
-            completion(success)
+            let predicate = NSPredicate(format: "id = '\(id)'")
+            ProductEntity.mr_deleteAll(matching: predicate, in: context)
         }, completion: { success, error in
             completion(success)
         })
