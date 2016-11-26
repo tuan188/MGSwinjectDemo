@@ -10,7 +10,7 @@ import UIKit
 
 class ProductListViewController: UITableViewController {
     
-    var productService: ProductServiceProtocol = ProductService()
+    var productService: ProductServiceProtocol!
     var products = [Product]()
 
     override func viewDidLoad() {

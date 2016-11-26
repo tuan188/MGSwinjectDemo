@@ -9,7 +9,7 @@
 import UIKit
 import MagicalRecord
 
-class ProductRepository: NSObject {
+class ProductRepository: ProductRepositoryProtocol {
     func add(product: Product, completion: @escaping (_ success: Bool) -> Void) {
         MagicalRecord.save({ (context) in
             if let entity = ProductEntity.mr_createEntity(in: context) {

@@ -22,6 +22,8 @@
 		BC84BE7A1DE83C5000265931 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE791DE83C5000265931 /* ProductListViewController.swift */; };
 		BC84BE7C1DE83C5D00265931 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE7B1DE83C5D00265931 /* ProductViewController.swift */; };
 		BC84BE7E1DE83D1100265931 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE7D1DE83D1100265931 /* ProductCell.swift */; };
+		BCB968521DE9C73400619A3A /* Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB968511DE9C73400619A3A /* Swinject.swift */; };
+		BCB968541DE9CB3400619A3A /* ProductRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB968531DE9CB3400619A3A /* ProductRepositoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		BC84BE791DE83C5000265931 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		BC84BE7B1DE83C5D00265931 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		BC84BE7D1DE83D1100265931 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		BCB968511DE9C73400619A3A /* Swinject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swinject.swift; sourceTree = "<group>"; };
+		BCB968531DE9CB3400619A3A /* ProductRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 				BC84BE611DE7EFA800265931 /* Models */,
 				BC84BE601DE7EFA000265931 /* Services */,
 				BC84BE4E1DE7EAF500265931 /* AppDelegate.swift */,
+				BCB968511DE9C73400619A3A /* Swinject.swift */,
 				BC84BE521DE7EAF500265931 /* Main.storyboard */,
 				BC84BE551DE7EAF500265931 /* Assets.xcassets */,
 				BC84BE571DE7EAF500265931 /* LaunchScreen.storyboard */,
@@ -133,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				BC84BE6E1DE7F1EB00265931 /* ProductRepository.swift */,
+				BCB968531DE9CB3400619A3A /* ProductRepositoryProtocol.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -271,9 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB968521DE9C73400619A3A /* Swinject.swift in Sources */,
 				BC84BE771DE8235600265931 /* MockProductService.swift in Sources */,
 				BC84BE7E1DE83D1100265931 /* ProductCell.swift in Sources */,
 				BC84BE7A1DE83C5000265931 /* ProductListViewController.swift in Sources */,
+				BCB968541DE9CB3400619A3A /* ProductRepositoryProtocol.swift in Sources */,
 				BC84BE751DE7F57F00265931 /* ProductService.swift in Sources */,
 				BC84BE671DE7F0B700265931 /* Product.swift in Sources */,
 				BC84BE4F1DE7EAF500265931 /* AppDelegate.swift in Sources */,
@@ -325,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -375,6 +384,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -404,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A526C3DA378C03CB6140A5C /* Pods-MGSwinjectDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NN74NJ78BB;
 				INFOPLIST_FILE = MGSwinjectDemo/Info.plist;
@@ -418,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47273A4251696753DAD1E926 /* Pods-MGSwinjectDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NN74NJ78BB;
 				INFOPLIST_FILE = MGSwinjectDemo/Info.plist;

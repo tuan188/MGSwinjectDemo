@@ -11,7 +11,11 @@ import UIKit
 class ProductService: ProductServiceProtocol {
     weak var delegate: ProductServiceDelegate?
     
-    let productRepository = ProductRepository()
+    private var productRepository: ProductRepositoryProtocol
+    
+    init(productRepository: ProductRepositoryProtocol) {
+        self.productRepository = productRepository
+    }
     
     func add(product: Product) {
         productRepository.add(product: product, completion: { [weak self] success in
