@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58CCF31EEA5E014C59D5F5EA /* Pods_MGSwinjectDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76829491A728EDDD0E0F0B0E /* Pods_MGSwinjectDemoTests.framework */; };
 		98D1A2E262F4A0D118786DA5 /* Pods_MGSwinjectDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7CF9CBFE674C2870A94FD3 /* Pods_MGSwinjectDemo.framework */; };
 		BC84BE4F1DE7EAF500265931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE4E1DE7EAF500265931 /* AppDelegate.swift */; };
 		BC84BE541DE7EAF500265931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC84BE521DE7EAF500265931 /* Main.storyboard */; };
@@ -23,12 +24,26 @@
 		BC84BE7C1DE83C5D00265931 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE7B1DE83C5D00265931 /* ProductViewController.swift */; };
 		BC84BE7E1DE83D1100265931 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84BE7D1DE83D1100265931 /* ProductCell.swift */; };
 		BCB968521DE9C73400619A3A /* Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB968511DE9C73400619A3A /* Swinject.swift */; };
-		BCB968541DE9CB3400619A3A /* ProductRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB968531DE9CB3400619A3A /* ProductRepositoryProtocol.swift */; };
+		BCB968561DEAE3A800619A3A /* ProductRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB968551DEAE3A800619A3A /* ProductRepositoryProtocol.swift */; };
+		BCB9685E1DEAEEEE00619A3A /* MGSwinjectDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9685D1DEAEEEE00619A3A /* MGSwinjectDemoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCB968601DEAEEEE00619A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC84BE431DE7EAF500265931 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC84BE4A1DE7EAF500265931;
+			remoteInfo = MGSwinjectDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2A526C3DA378C03CB6140A5C /* Pods-MGSwinjectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGSwinjectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGSwinjectDemo/Pods-MGSwinjectDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		36A9DC112B5D453B616FF849 /* Pods-MGSwinjectDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGSwinjectDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGSwinjectDemoTests/Pods-MGSwinjectDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		47273A4251696753DAD1E926 /* Pods-MGSwinjectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGSwinjectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGSwinjectDemo/Pods-MGSwinjectDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6F43DDE31846D0F21F55D1DC /* Pods-MGSwinjectDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGSwinjectDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGSwinjectDemoTests/Pods-MGSwinjectDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76829491A728EDDD0E0F0B0E /* Pods_MGSwinjectDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGSwinjectDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7CF9CBFE674C2870A94FD3 /* Pods_MGSwinjectDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGSwinjectDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC84BE4B1DE7EAF500265931 /* MGSwinjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGSwinjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC84BE4E1DE7EAF500265931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +62,10 @@
 		BC84BE7B1DE83C5D00265931 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		BC84BE7D1DE83D1100265931 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		BCB968511DE9C73400619A3A /* Swinject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swinject.swift; sourceTree = "<group>"; };
-		BCB968531DE9CB3400619A3A /* ProductRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BCB968551DEAE3A800619A3A /* ProductRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BCB9685B1DEAEEED00619A3A /* MGSwinjectDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGSwinjectDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB9685D1DEAEEEE00619A3A /* MGSwinjectDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGSwinjectDemoTests.swift; sourceTree = "<group>"; };
+		BCB9685F1DEAEEEE00619A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB968581DEAEEED00619A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CCF31EEA5E014C59D5F5EA /* Pods_MGSwinjectDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7CF9CBFE674C2870A94FD3 /* Pods_MGSwinjectDemo.framework */,
+				76829491A728EDDD0E0F0B0E /* Pods_MGSwinjectDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +102,8 @@
 			children = (
 				2A526C3DA378C03CB6140A5C /* Pods-MGSwinjectDemo.debug.xcconfig */,
 				47273A4251696753DAD1E926 /* Pods-MGSwinjectDemo.release.xcconfig */,
+				6F43DDE31846D0F21F55D1DC /* Pods-MGSwinjectDemoTests.debug.xcconfig */,
+				36A9DC112B5D453B616FF849 /* Pods-MGSwinjectDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -83,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				BC84BE4D1DE7EAF500265931 /* MGSwinjectDemo */,
+				BCB9685C1DEAEEEE00619A3A /* MGSwinjectDemoTests */,
 				BC84BE4C1DE7EAF500265931 /* Products */,
 				3406284C278832CE548502B1 /* Pods */,
 				172F450A320632E14FCEEC1E /* Frameworks */,
@@ -93,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				BC84BE4B1DE7EAF500265931 /* MGSwinjectDemo.app */,
+				BCB9685B1DEAEEED00619A3A /* MGSwinjectDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				BC84BE6E1DE7F1EB00265931 /* ProductRepository.swift */,
-				BCB968531DE9CB3400619A3A /* ProductRepositoryProtocol.swift */,
+				BCB968551DEAE3A800619A3A /* ProductRepositoryProtocol.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -151,6 +182,15 @@
 				BC84BE7D1DE83D1100265931 /* ProductCell.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		BCB9685C1DEAEEEE00619A3A /* MGSwinjectDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCB9685D1DEAEEEE00619A3A /* MGSwinjectDemoTests.swift */,
+				BCB9685F1DEAEEEE00619A3A /* Info.plist */,
+			);
+			path = MGSwinjectDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +216,27 @@
 			productReference = BC84BE4B1DE7EAF500265931 /* MGSwinjectDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BCB9685A1DEAEEED00619A3A /* MGSwinjectDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB968621DEAEEEE00619A3A /* Build configuration list for PBXNativeTarget "MGSwinjectDemoTests" */;
+			buildPhases = (
+				1D18A524AFAF04D56F146602 /* [CP] Check Pods Manifest.lock */,
+				BCB968571DEAEEED00619A3A /* Sources */,
+				BCB968581DEAEEED00619A3A /* Frameworks */,
+				BCB968591DEAEEED00619A3A /* Resources */,
+				92E001140B969A83A78CE6A1 /* [CP] Embed Pods Frameworks */,
+				0EA899E5DB6AC60FAB422B31 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCB968611DEAEEEE00619A3A /* PBXTargetDependency */,
+			);
+			name = MGSwinjectDemoTests;
+			productName = MGSwinjectDemoTests;
+			productReference = BCB9685B1DEAEEED00619A3A /* MGSwinjectDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +251,12 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = NN74NJ78BB;
 						ProvisioningStyle = Automatic;
+					};
+					BCB9685A1DEAEEED00619A3A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NN74NJ78BB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC84BE4A1DE7EAF500265931;
 					};
 				};
 			};
@@ -207,6 +274,7 @@
 			projectRoot = "";
 			targets = (
 				BC84BE4A1DE7EAF500265931 /* MGSwinjectDemo */,
+				BCB9685A1DEAEEED00619A3A /* MGSwinjectDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,9 +290,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB968591DEAEEED00619A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EA899E5DB6AC60FAB422B31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGSwinjectDemoTests/Pods-MGSwinjectDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D18A524AFAF04D56F146602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		31FC9E70AC349FE036B5CA66 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +360,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGSwinjectDemo/Pods-MGSwinjectDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		92E001140B969A83A78CE6A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGSwinjectDemoTests/Pods-MGSwinjectDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		931B0C276C2816C7A53B2925 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,7 +401,7 @@
 				BC84BE771DE8235600265931 /* MockProductService.swift in Sources */,
 				BC84BE7E1DE83D1100265931 /* ProductCell.swift in Sources */,
 				BC84BE7A1DE83C5000265931 /* ProductListViewController.swift in Sources */,
-				BCB968541DE9CB3400619A3A /* ProductRepositoryProtocol.swift in Sources */,
+				BCB968561DEAE3A800619A3A /* ProductRepositoryProtocol.swift in Sources */,
 				BC84BE751DE7F57F00265931 /* ProductService.swift in Sources */,
 				BC84BE671DE7F0B700265931 /* Product.swift in Sources */,
 				BC84BE4F1DE7EAF500265931 /* AppDelegate.swift in Sources */,
@@ -293,7 +413,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB968571DEAEEED00619A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB9685E1DEAEEEE00619A3A /* MGSwinjectDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCB968611DEAEEEE00619A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC84BE4A1DE7EAF500265931 /* MGSwinjectDemo */;
+			targetProxy = BCB968601DEAEEEE00619A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC84BE521DE7EAF500265931 /* Main.storyboard */ = {
@@ -440,6 +576,36 @@
 			};
 			name = Release;
 		};
+		BCB968631DEAEEEE00619A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F43DDE31846D0F21F55D1DC /* Pods-MGSwinjectDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NN74NJ78BB;
+				INFOPLIST_FILE = MGSwinjectDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = truong.tuan.MGSwinjectDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGSwinjectDemo.app/MGSwinjectDemo";
+			};
+			name = Debug;
+		};
+		BCB968641DEAEEEE00619A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A9DC112B5D453B616FF849 /* Pods-MGSwinjectDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NN74NJ78BB;
+				INFOPLIST_FILE = MGSwinjectDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = truong.tuan.MGSwinjectDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MGSwinjectDemo.app/MGSwinjectDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,6 +626,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BCB968621DEAEEEE00619A3A /* Build configuration list for PBXNativeTarget "MGSwinjectDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB968631DEAEEEE00619A3A /* Debug */,
+				BCB968641DEAEEEE00619A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

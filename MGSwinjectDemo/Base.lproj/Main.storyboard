@@ -12,7 +12,7 @@
         <!--Product List-->
         <scene sceneID="Ag3-TU-767">
             <objects>
-                <tableViewController id="y2C-aY-3mz" customClass="ProductListViewController" customModule="MGSwinjectDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ProductListViewController" id="y2C-aY-3mz" customClass="ProductListViewController" customModule="MGSwinjectDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YZC-cb-2HO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4t-XT-akK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="-565"/>
+            <point key="canvasLocation" x="854" y="-565"/>
         </scene>
         <!--Product Details-->
         <scene sceneID="LET-9p-nCD">
@@ -146,7 +146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ua-z0-g2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2834.4000000000001" y="-565.36731634182911"/>
+            <point key="canvasLocation" x="2295" y="-565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="87w-Zp-Zsh">
@@ -164,7 +164,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hs-bq-uBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="-565.36731634182911"/>
+            <point key="canvasLocation" x="134" y="-565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tNB-7p-IfK">
@@ -182,7 +182,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLD-3E-LVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1893.5999999999999" y="-565.36731634182911"/>
+            <point key="canvasLocation" x="1586" y="-565"/>
         </scene>
     </scenes>
 </document>

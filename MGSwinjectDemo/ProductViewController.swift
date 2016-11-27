@@ -48,6 +48,4 @@ class ProductViewController: UITableViewController {
     @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
 }

@@ -22,8 +22,7 @@ extension SwinjectStoryboard
         
         defaultContainer.registerForStoryboard(ProductListViewController.self) {
             resolveable, viewController in
-            viewController.productService = resolveable.resolve(ProductServiceProtocol.self)
+            viewController.productService = resolveable.resolve(ProductServiceProtocol.self)!
         }
-        
     }
 }
